@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --scroll-behavior: smooth;
+    --font-bruno-ace-sc: "Bruno Ace SC" , "serif";
+    --font-roboto: "Roboto" , "serif";
+}
+
+.skill-container{
+    @apply flex bg-[#1b1b1b] justify-evenly items-center flex-col w-full h-[70vh] flex-wrap;
+}
+
+.skill-left{
+    @apply flex justify-center content-center items-center w-[30%] h-[100vh] flex-wrap p-10;
+}
+
+.skill-left-heading{
+    @apply text-[#7F8CAA] text-4xl font-thin font-bruno-ace-sc;
+}
+
+.skill-right{
+    @apply flex justify-center content-center items-center w-[70%] h-[100vh] flex-wrap p-3;
+}
+
+.skill-right-text{
+    @apply text-[#7F8CAA] text-base font-bold leading-7;
+}
+
+.skill-right-list{
+    @apply flex flex-row text-[#ffffff] text-base font-thin gap-5 mt-10 flex-wrap justify-center 
+    items-center content-center cursor-pointer;
+}
+
+.skill-right-list li{
+    @apply border border-black/7 px-3 py-1 transform transition-all duration-600 ease-in-out relative overflow-hidden
+    hover:rounded-3xl hover:backdrop-blur-2xl hover:border-black/10 hover:shadow-[#7F8CAA] 
+    hover:text-[#ffffff] hover:shadow-2xl hover:scale-110 hover:translate-y-[-2px] 
+    hover:shadow-[0_10px_20px_rgba(0,0,0,0.3)] active:scale-95 rounded-3xl;
+}

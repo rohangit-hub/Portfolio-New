@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --scroll-behavior: smooth;
+    --font-bruno-ace-sc: "Bruno Ace SC" , "serif";
+    --font-roboto: "Roboto" , "serif";
+}
+
+.about-container{
+    @apply flex bg-[#1b1b1b] justify-evenly items-center flex-col w-full h-[90vh] flex-wrap;
+}
+
+.about-left{
+    @apply flex justify-center content-center items-center w-[30%] h-[100vh] flex-wrap p-10;
+}
+
+.about-left-heading{
+    @apply text-[#7F8CAA] text-4xl font-extralight font-bruno-ace-sc;
+}
+
+.about-right{
+    @apply flex justify-center content-center items-center w-[70%] h-[90vh] flex-wrap p-2;
+}
+
+.about-right-text{
+    @apply text-[#ffffff] text-base font-light leading-7;
+}

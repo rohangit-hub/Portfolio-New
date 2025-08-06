@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Londrina+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-italiana: "Italiana" , "sans-serif";
+    --font-londrina-outline: "Londrina Outline" , "sans-serif";
+    --scroll-behavior: smooth;
+    --font-bruno-ace-sc: "Bruno Ace SC" , "sans-serif";
+    --font-roboto: "Roboto" , "sans-serif";
+    --font-roboto-mono: "Roboto Mono" , "sans-serif";
+}
