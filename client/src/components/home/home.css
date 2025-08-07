@@ -69,3 +69,42 @@
     box-shadow: 0 0 3px #7F8CAA, 0 0 6px #7F8CAA, 0 0 9px #7F8CAA;
 }
 
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .home-container {
+        @apply flex-col h-auto min-h-[100vh] p-4 pt-20;
+    }
+    
+    .home-content-left {
+        @apply w-full h-auto gap-4 order-2;
+    }
+    
+    .hello-text {
+        @apply text-xl text-center;
+    }
+    
+    .name-text {
+        @apply text-[2.5rem] text-center leading-tight;
+    }
+    
+    .full-stack-text {
+        @apply text-xl text-center;
+    }
+    
+    .home-content-right {
+        @apply w-full h-auto order-1 mb-6;
+    }
+    
+    .home-content-right-img {
+        @apply w-[10rem] h-[10rem];
+    }
+    
+    .social-media-icon {
+        @apply w-[2rem] h-[2rem];
+    }
+    
+    .arrow-down-icon {
+        @apply w-[2.5rem] h-[2.5rem];
+    }
+}
+

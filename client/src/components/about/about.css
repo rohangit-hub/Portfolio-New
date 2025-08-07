@@ -26,3 +26,26 @@
 .about-right-text{
     @apply text-[#ffffff] text-base font-light leading-7;
 }
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        @apply flex-col h-auto min-h-[90vh] p-4;
+    }
+    
+    .about-left {
+        @apply w-full h-auto p-6 mb-4;
+    }
+    
+    .about-left-heading {
+        @apply text-3xl text-center;
+    }
+    
+    .about-right {
+        @apply w-full h-auto p-4;
+    }
+    
+    .about-right-text {
+        @apply text-sm leading-6 text-center;
+    }
+}

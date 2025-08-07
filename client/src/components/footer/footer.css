@@ -11,3 +11,10 @@
     @apply flex text-[#ffffff] bg-[#000000] justify-evenly items-center flex-col w-full h-[5vh] 
     flex-wrap text-center text-sm font-thin font-roboto;
 }
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        @apply h-auto p-4 text-xs;
+    }
+}

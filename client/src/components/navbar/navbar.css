@@ -30,3 +30,73 @@
     hover:shadow-2xl hover:shadow-[#7F8CAA] hover:scale-110 hover:translate-y-[-2px] 
     hover:shadow-[0_10px_20px_rgba(0,0,0,0.3)] active:scale-95;
 }
+
+/* Mobile Navigation Styles */
+.mobile-nav {
+    @apply hidden relative;
+}
+
+.burger-button {
+    @apply flex flex-col justify-center items-center w-8 h-8 bg-transparent border-none cursor-pointer p-0;
+}
+
+.burger-line {
+    @apply w-6 h-0.5 bg-white mb-1 transition-all duration-300 ease-in-out;
+}
+
+.burger-line:last-child {
+    @apply mb-0;
+}
+
+.burger-line.active:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-line.active:nth-child(2) {
+    @apply opacity-0;
+}
+
+.burger-line.active:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.mobile-dropdown {
+    @apply absolute top-12 left-0 bg-[#1b1b1b]/95 rounded-2xl p-4 shadow-xl shadow-[#7F8CAA] 
+    backdrop-blur-lg border border-[#7F8CAA]/30 opacity-0 invisible transform scale-95 
+    transition-all duration-300 ease-in-out min-w-[200px] z-[999];
+}
+
+.mobile-dropdown.open {
+    @apply opacity-100 visible scale-100;
+}
+
+.mobile-dropdown a {
+    @apply block px-4 py-3 text-white text-sm font-normal border-b border-[#7F8CAA]/20 
+    transition-all duration-300 ease-in-out hover:bg-[#7F8CAA]/20 hover:rounded-lg
+    hover:text-[#7F8CAA] hover:scale-105;
+}
+
+.mobile-dropdown a:last-child {
+    @apply border-b-0 bg-[#7F8CAA]/10 text-[#7F8CAA] font-medium;
+}
+
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        @apply w-full h-auto py-3 px-4 top-4 left-0 right-0 bg-transparent shadow-none backdrop-blur-none justify-start items-start;
+        position: fixed;
+        background: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+    
+    .desktop-nav {
+        @apply hidden;
+    }
+    
+    .mobile-nav {
+        @apply flex relative w-auto;
+    }
+    
+
+}

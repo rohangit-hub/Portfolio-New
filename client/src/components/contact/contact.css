@@ -65,5 +65,56 @@
     hover:shadow-[0_10px_20px_rgba(0,0,0,0.3)] active:scale-95 rounded-3xl mx-auto;
 }
 
+/* Mobile and Tablet Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        @apply flex-col h-auto min-h-[100vh] p-4;
+    }
+    
+    .contact-left {
+        @apply w-full h-auto mb-6 order-1;
+    }
+    
+    .contact-left-heading {
+        @apply text-3xl text-center;
+    }
+    
+    .social-media-container {
+        @apply gap-6 mt-4;
+    }
+    
+    .social-media-icon {
+        @apply w-[2rem] h-[2rem];
+    }
+    
+    .contact-left-text-content {
+        @apply text-center text-xs;
+    }
+    
+    .contact-right {
+        @apply w-full h-auto order-2;
+    }
+    
+    .contact-right-heading {
+        @apply text-2xl mt-4 text-center;
+    }
+    
+    .contact-right-form {
+        @apply max-w-full px-4;
+    }
+    
+    .contact-right-input {
+        @apply px-3 py-2 text-sm;
+    }
+    
+    .contact-right-textarea {
+        @apply px-3 py-2 text-sm h-[4rem];
+    }
+    
+    .contact-right-submit {
+        @apply w-[8rem] px-2 py-1 text-sm;
+    }
+}
+
 
 
