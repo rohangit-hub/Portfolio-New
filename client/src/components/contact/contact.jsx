@@ -43,18 +43,18 @@ function contact() {
         <br />
         <br />
         <div className='social-media-container'>
-          <a href='https://www.linkedin.com/in/rohan-tiwari-0000000000/' target='_blank' rel='noopener noreferrer'>
-            <img src={linkedin} alt='LinkedIn' className='social-media-icon' />
-          </a>
-          <a href='https://github.com/rohan-tiwari-0000000000/' target='_blank' rel='noopener noreferrer'>
-            <img src={github} alt='GitHub' className='social-media-icon' />
-          </a>
-          <a href='https://www.instagram.com/rohan_tiwari_0000000000/' target='_blank' rel='noopener noreferrer'>
-            <img src={instagram} alt='Instagram' className='social-media-icon' />
-          </a>
-          <a href='https://x.com/rohan_tiwari_0000000000/' target='_blank' rel='noopener noreferrer'>
-            <img src={twitter} alt='Twitter' className='social-media-icon' />
-          </a>
+        <a href='https://www.linkedin.com/in/rohan-tiwari-966465202/' target='_blank' rel='noopener noreferrer'>
+           <img src={linkedin} alt='LinkedIn' className='social-media-icon'/>
+        </a>
+        <a href='https://github.com/rohangit-hub' target='_blank' rel='noopener noreferrer'>
+           <img src={github} alt='GitHub' className='social-media-icon'/>
+        </a>
+        <a href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
+           <img src={instagram} alt='Instagram' className='social-media-icon'/>
+        </a>
+        <a href='https://x.com/rohan0804_/' target='_blank' rel='noopener noreferrer'>
+           <img src={twitter} alt='Twitter' className='social-media-icon'/>
+        </a>
         </div>
          <br />
           <p className='contact-left-text-content'>rohantiwari0325@gmail.com</p>

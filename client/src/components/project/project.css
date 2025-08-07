@@ -7,7 +7,82 @@
     --font-roboto: "Roboto" , "serif";
 }
 
-
 .project-container{
-    @apply flex text-[#ffffff] bg-[#1b1b1b] justify-evenly items-center flex-col w-full h-[100vh] flex-wrap;
+    @apply flex bg-[#1b1b1b] justify-evenly items-center flex-col w-full h-[100vh] flex-wrap;
+}
+
+.project-left{
+    @apply flex justify-center content-center items-center w-[70%] h-[100vh] flex-wrap p-20 mt-20;
+}
+
+.filter-container{
+    @apply flex justify-center text-white items-center gap-2 mb-5 w-full flex-wrap font-thin cursor-pointer;
+}
+
+.filter-button{
+    @apply border border-black/7 px-3 py-1 transform transition-all duration-600 ease-in-out relative overflow-hidden
+    hover:rounded-3xl hover:backdrop-blur-2xl hover:border-black/10 hover:shadow-[#7F8CAA] 
+    hover:text-[#ffffff] hover:shadow-2xl hover:scale-110 hover:translate-y-[-2px] 
+    hover:shadow-[0_10px_20px_rgba(0,0,0,0.3)] active:scale-95 rounded-3xl;
+}
+
+.project-left-img-container{
+    @apply flex justify-center content-start items-center w-[100%] h-[100%] flex-wrap gap-5 
+    overflow-y-scroll p-2 scroll-smooth; 
+}
+
+.project-card{
+    @apply flex flex-col items-center gap-2 p-4 rounded-2xl border-1 
+    hover:border-1 hover:border-[#7F8CAA] transition-colors duration-500;
+}
+
+.project-left-img{
+    @apply w-[10rem] h-[10rem] object-fill rounded-xl;
+}
+
+.project-info{
+    @apply flex flex-col items-center gap-2 w-full;
+}
+
+.project-title{
+    @apply text-white text-sm text-center font-bruno-ace-sc font-thin;
+}
+
+.project-technologies{
+    @apply flex flex-wrap justify-center gap-1;
+}
+
+.tech-tag{
+    @apply px-2 py-1 overflow-hidden text-white text-xs rounded-full font-roboto font-thin;
+}
+
+.github-icon-container{
+    @apply flex justify-center items-center w-full;
+}
+
+.github-icon{
+    @apply w-6 h-6 cursor-pointer hover:scale-110 transition-transform duration-300 filter invert;
+}
+
+.project-right{
+    @apply flex justify-center content-center items-center w-[30%] h-[100vh] flex-wrap p-10 mt-25;
+}
+
+.project-right-heading{
+    @apply text-[#7F8CAA] text-4xl font-thin font-bruno-ace-sc;
+}
+
+.search-container{
+    @apply flex items-center gap-2 bg-[#2a2a2a] text-white mt-10 rounded-2xl px-2 py-1
+    border border-[#7F8CAA] focus-within:bg-[#3a3a3a] transition-colors duration-300;
+}
+
+.search-input{
+    @apply w-full px-2 py-1 font-thin text-sm font-roboto
+    focus:border-[#e5e5e5] focus:outline-none transition-all duration-300 
+    text-[#ffffff] bg-[transparent] placeholder:text-[#888] font-light;
+}
+
+.search-icon{
+    @apply text-[#7F8CAA] text-lg;
 }

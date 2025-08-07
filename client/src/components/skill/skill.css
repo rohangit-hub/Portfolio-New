@@ -8,11 +8,11 @@
 }
 
 .skill-container{
-    @apply flex bg-[#1b1b1b] justify-evenly items-center flex-col w-full h-[70vh] flex-wrap;
+    @apply flex bg-[#1b1b1b] justify-evenly items-center flex-col w-full h-[70vh] flex-wrap p-30;
 }
 
 .skill-left{
-    @apply flex justify-center content-center items-center w-[30%] h-[100vh] flex-wrap p-10;
+    @apply flex justify-center content-center items-center w-[30%] h-[100vh] flex-wrap p-10 mt-20;
 }
 
 .skill-left-heading{
@@ -20,7 +20,7 @@
 }
 
 .skill-right{
-    @apply flex justify-center content-center items-center w-[70%] h-[100vh] flex-wrap p-3;
+    @apply flex justify-center content-center items-center w-[70%] h-[100vh] flex-wrap p-3 mt-20;
 }
 
 .skill-right-text{
@@ -28,8 +28,7 @@
 }
 
 .skill-right-list{
-    @apply flex flex-row text-[#ffffff] text-base font-thin gap-5 mt-10 flex-wrap justify-center 
-    items-center content-center cursor-pointer;
+    @apply flex flex-row text-[#ffffff] text-base font-thin gap-5 mt-10 flex-wrap justify-center items-center content-center cursor-pointer;
 }
 
 .skill-right-list li{

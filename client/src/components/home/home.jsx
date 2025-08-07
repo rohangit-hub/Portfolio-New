@@ -50,16 +50,16 @@ function home() {
         <h1 className='name-text'>Rohan Tiwari</h1>
         <h1 className='full-stack-text'>Full Stack Developer & Designer</h1>
       <div className='social-media-container'>
-        <a href='https://www.linkedin.com/in/rohan-tiwari-0000000000/' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.linkedin.com/in/rohan-tiwari-966465202/' target='_blank' rel='noopener noreferrer'>
            <img src={linkedin} alt='LinkedIn' className='social-media-icon'/>
         </a>
-        <a href='https://github.com/rohan-tiwari-0000000000/' target='_blank' rel='noopener noreferrer'>
+        <a href='https://github.com/rohangit-hub' target='_blank' rel='noopener noreferrer'>
            <img src={github} alt='GitHub' className='social-media-icon'/>
         </a>
-        <a href='https://www.instagram.com/rohan_tiwari_0000000000/' target='_blank' rel='noopener noreferrer'>
+        <a href='https://www.instagram.com/' target='_blank' rel='noopener noreferrer'>
            <img src={instagram} alt='Instagram' className='social-media-icon'/>
         </a>
-        <a href='https://x.com/rohan_tiwari_0000000000/' target='_blank' rel='noopener noreferrer'>
+        <a href='https://x.com/rohan0804_/' target='_blank' rel='noopener noreferrer'>
            <img src={twitter} alt='Twitter' className='social-media-icon'/>
         </a>
       </div>
