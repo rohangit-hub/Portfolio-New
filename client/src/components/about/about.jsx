@@ -4,8 +4,9 @@ function about() {
   return (
     <div className='about-container font-roboto' id='about'>
         <div className='about-left'>
-            <p className='about-left-heading'> Know Me</p>
-            <p className='about-left-heading'> More</p>
+            <div className='about-left-heading'>
+                Know Me<br />More
+            </div>
         </div>
 
         <div className='about-right'>

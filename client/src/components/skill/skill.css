@@ -17,6 +17,8 @@
 
 .skill-left-heading{
     @apply text-[#7F8CAA] text-4xl font-thin font-bruno-ace-sc;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .skill-right{
@@ -50,6 +52,7 @@
     
     .skill-left-heading {
         @apply text-3xl text-center;
+        line-height: 1.5;
     }
     
     .skill-right {

@@ -4,8 +4,9 @@ function skill() {
   return (
     <div className='skill-container font-roboto' id='skill'>
         <div className='skill-left'>
-            <p className='skill-left-heading'> Know My</p>
-            <p className='skill-left-heading'> Skills</p>
+            <div className='skill-left-heading'>
+                Know My<br />Skills
+            </div>
         </div>
 
         <div className='skill-right'>

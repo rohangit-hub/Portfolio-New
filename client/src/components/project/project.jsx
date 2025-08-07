@@ -75,8 +75,9 @@ function project() {
       </div>
 
       <div className='project-right'>
-        <p className='project-right-heading'> Know My </p>
-        <p className='project-right-heading'> Projects </p>
+        <div className='project-right-heading'>
+            Know My<br />Projects
+        </div>
         <div className='search-container'>
           <input
             type='text'
