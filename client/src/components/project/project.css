@@ -31,6 +31,31 @@
     overflow-y-scroll p-2 scroll-smooth; 
 }
 
+/* Custom thin scrollbar styles */
+.project-left-img-container::-webkit-scrollbar {
+    width: 4px;
+}
+
+.project-left-img-container::-webkit-scrollbar-track {
+    background: rgba(127, 140, 170, 0.1);
+    border-radius: 2px;
+}
+
+.project-left-img-container::-webkit-scrollbar-thumb {
+    background: #7F8CAA;
+    border-radius: 2px;
+}
+
+.project-left-img-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(127, 140, 170, 0.8);
+}
+
+/* Firefox scrollbar */
+.project-left-img-container {
+    scrollbar-width: thin;
+    scrollbar-color: #7F8CAA rgba(127, 140, 170, 0.1);
+}
+
 .project-card{
     @apply flex flex-col items-center gap-2 p-4 rounded-2xl border-1 
     hover:border-1 hover:border-[#7F8CAA] transition-colors duration-500;
@@ -92,7 +117,9 @@
 /* Mobile and Tablet Responsive Styles */
 @media (max-width: 768px) {
     .project-container {
-        @apply flex-col h-auto min-h-[100vh] p-4;
+        @apply flex-col h-auto min-h-[100vh] p-2;
+        width: 100vw;
+        max-width: 100vw;
     }
     
     .project-left {
@@ -105,6 +132,8 @@
     
     .project-card {
         @apply p-3;
+        width: 100%;
+        max-width: 200px;
     }
     
     .project-left-img {
