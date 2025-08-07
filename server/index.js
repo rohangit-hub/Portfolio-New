@@ -1,8 +1,15 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from 'url';
 const app = express();
 import connectDB from "./db.js";
 import transporter from "./mailTransporter.js";
 import cors from "cors"
+
+// Get current directory for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -28,9 +35,10 @@ connectDB()
 });
 
 
-///////////////////Test Route///////////////////
+///////////////////WE ARE LIVE Route///////////////////
 router.get("/", (req, res) => {
-    res.status(200).send("Hello World..!");
+    res.setHeader('Content-Type', 'image/png');
+    res.sendFile(path.join(__dirname, "we-are-live-image.png"));
 }); 
 
 
