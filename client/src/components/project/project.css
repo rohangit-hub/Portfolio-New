@@ -92,24 +92,44 @@
 
 .project-technologies-overlay {
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.2rem;
     position: absolute;
     width: 100%;
     top: 35%;
     left: 50%;
     text-align: left;
-    padding: 0.5rem;
+    padding: 0.1rem;
     transform: translate(-50%, -50%);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0.8rem;
-    gap: 0.25rem;
+    gap: 0.3rem;
+}
+
+.tech-heading {
+    color:  #000000;
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Bruno Ace SC" , "serif";
+}
+
+.tech-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem;
+    justify-content: center;
 }
 
 .tech-tag-overlay {
-    @apply px-2 py-1 text-[#000000] text-xs rounded-full font-roboto font-normal;
+    @apply px-1 py-1 text-[#000000] text-[0.6rem] rounded-full font-roboto font-normal;
     backdrop-filter: blur(5px);
 }
+
+
 
 .project-info{
     @apply flex flex-col items-center gap-2 w-full;
@@ -187,13 +207,17 @@
     }
     
     .project-technologies-overlay {
-        font-size: 0.6rem;
-        padding: 0.3rem;
+        font-size: 0.4rem;
+        padding: 0.2rem;
         gap: 0.2rem;
     }
     
+    .tech-heading {
+        font-size: 0.6rem;
+    }
+    
     .tech-tag-overlay {
-        @apply text-[0.55rem] px-1 py-0.5;
+        @apply text-[0.45rem] px-1 py-0.5;
     }
     
     .project-title {
