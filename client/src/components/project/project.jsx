@@ -10,7 +10,7 @@ import githubIcon from '../../assets/github-icon.png'
 
 function project() {
   const projects = [
-    { id: 1, image: portfolio_1, alt: 'portfolio-1', link: 'https://github.com/rohangit-hub', technologies: ['React', 'Node.js'], title: 'E-commerce Website' },
+    { id: 1, image: portfolio_1, alt: 'portfolio-1', link: 'https://github.com/rohangit-hub', technologies: ['React', 'Node.js', "express", "mongodb", "tailwind", "render"], title: 'This Portfolio' },
     { id: 2, image: portfolio_2, alt: 'portfolio-2', link: 'https://github.com/rohangit-hub', technologies: ['Node.js', 'Express'], title: 'API Backend' },
     { id: 3, image: portfolio_3, alt: 'portfolio-3', link: 'https://github.com/rohangit-hub', technologies: ['Html', 'CSS', "Js"], title: 'Portfolio Website' },
     { id: 6, image: portfolio_6, alt: 'portfolio-6', link: 'https://github.com/rohangit-hub', technologies: ['Next.js', 'Node.js'], title: 'Full Stack App' },
@@ -55,14 +55,18 @@ function project() {
         <div className='project-left-img-container'>
           {allProjects.map((project, index) => (
             <div key={index} className='project-card'>
-              <img src={project.image} alt={project.alt} className='project-left-img' />
+              <div className='project-image-container'>
+                <img src={project.image} alt={project.alt} className='project-left-img' />
+                <div className='project-overlay'>
+                  <div className='project-technologies-overlay'>
+                    {project.technologies.map(tech => (
+                      <span key={tech} className='tech-tag-overlay'>{tech}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
               <div className='project-info'>
                 <h3 className='project-title'>{project.title}</h3>
-                <div className='project-technologies'>
-                  {project.technologies.map(tech => (
-                    <span key={tech} className='tech-tag'>{tech}</span>
-                  ))}
-                </div>
               </div>
               <div className='github-icon-container'>
                 <a href={project.link} target='_blank' rel='noopener noreferrer'>
