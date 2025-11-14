@@ -17,21 +17,26 @@ function contact() {
 
     alert('Query sent successfully, I will get back to you soon!..');
     try {
-      await axios.post('https://portfolio-backend-my3n.onrender.com/api/v1/send-email', {
+      const emailata = await axios.post('https://portfolio-backend-my3n.onrender.com/api/v1/send-email', {
         name,
         email,
         message: `I am ${name}, email is ${email}, contact number is ${mobile}, my query is ${message}`
       });
 
-      alert('Query sent successfully, I will get back to you soon!..');
-      setName('');
-      setEmail('');
-      setMobile('');
-      setMessage('');
+      alert(`Hello ${name}, Sending your Query...!`);
+
+      if(emailata){
+        alert(`Hello ${name}, Query sent successfully, We will get back to you Soon..!`);
+        setName('');
+        setEmail('');
+        setMobile('');
+        setMessage('');
+      }
+      
     } 
     catch (error) {
       console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again.');
+      alert('Failed to send mail. Please try again.');
     }
   };
 

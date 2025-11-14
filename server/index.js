@@ -25,7 +25,7 @@ app.use("/api/v1", router);
 
 connectDB()
 .then(() => {
-    console.log("Database Connected..!");
+    console.log("Database Connected ..!");
     app.listen(process.env.PORT, () => {
         console.log(`Server is running on port ${process.env.PORT}`);
     });
@@ -39,7 +39,7 @@ connectDB()
 router.get("/", (req, res) => {
     res.setHeader('Content-Type', 'image/png');
     res.sendFile(path.join(__dirname, "we-are-live-image.png"));
-}); 
+});
 
 
 ///////////////////Send Email Route/////////////
