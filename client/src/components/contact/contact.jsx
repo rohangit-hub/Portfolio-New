@@ -15,7 +15,7 @@ function contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    alert('Query sent successfully!');
+    alert('Query sent successfully, I will get back to you soon!..');
     try {
       await axios.post('https://portfolio-backend-my3n.onrender.com/api/v1/send-email', {
         name,
@@ -23,7 +23,7 @@ function contact() {
         message: `I am ${name}, email is ${email}, contact number is ${mobile}, my query is ${message}`
       });
 
-      alert('Query Received Successfully!');
+      alert('Query sent successfully, I will get back to you soon!..');
       setName('');
       setEmail('');
       setMobile('');
