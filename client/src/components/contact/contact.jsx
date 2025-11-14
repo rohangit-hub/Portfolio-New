@@ -15,17 +15,15 @@ function contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    alert('Query sent successfully, I will get back to you soon!..');
+    alert(`Hello ${name}, Sending your Query please wait...!`); 
     try {
-      const emailata = await axios.post('https://portfolio-backend-my3n.onrender.com/api/v1/send-email', {
+      const emailInfo = await axios.post('https://portfolio-backend-my3n.onrender.com/api/v1/send-email', {
         name,
         email,
         message: `I am ${name}, email is ${email}, contact number is ${mobile}, my query is ${message}`
       });
 
-      alert(`Hello ${name}, Sending your Query...!`);
-
-      if(emailata){
+      if(emailInfo){
         alert(`Hello ${name}, Query sent successfully, We will get back to you Soon..!`);
         setName('');
         setEmail('');
