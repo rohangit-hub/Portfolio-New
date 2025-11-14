@@ -17,7 +17,7 @@ function contact() {
 
     alert(`Hello ${name}, Sending your Query please wait...!`); 
     try {
-      const emailInfo = await axios.post('https://portfolio-backend-my3n.onrender.com/api/v1/send-email', {
+      const emailInfo = await axios.post('https://portfolio-new-h6ws.onrender.com/api/v1/send-email', {
         name,
         email,
         message: `I am ${name}, email is ${email}, contact number is ${mobile}, my query is ${message}`
