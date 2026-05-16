@@ -4,7 +4,11 @@ import { fileURLToPath } from 'url';
 const app = express();
 import connectDB from "./db.js";
 import transporter from "./mailTransporter.js";
-import cors from "cors"
+import cors from "cors";
+import dns from "dns";
+
+// Change DNS
+dns.setServers(["1.1.1.1", "8.8.8.8"])
 
 // Get current directory for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -64,16 +68,3 @@ router.post("/send-email", async (req, res) => {
     }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
